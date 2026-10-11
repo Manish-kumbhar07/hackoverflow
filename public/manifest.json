@@ -1,0 +1,17 @@
+{
+  "name": "CentralSaathi — Mumbai Local Transit Suite",
+  "short_name": "CentralSaathi",
+  "description": "Central Line Mumbai Local Timetable Route Finder, commuter intelligence, official mega block alerts, and women safety SOS.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07131e",
+  "theme_color": "#064e3b",
+  "icons": [
+    {
+      "src": "/assets/central_saathi_logo.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Indian Railway Imperial Crimson Gradient -->
+    <linearGradient id="irMaroonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#991b1b"/>
+      <stop offset="35%" stop-color="#831843"/>
+      <stop offset="70%" stop-color="#701a75"/>
+      <stop offset="100%" stop-color="#4c0519"/>
+    </linearGradient>
+
+    <!-- Ashoka / National Tricolor Gold Gradient -->
+    <linearGradient id="irGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="25%" stop-color="#f59e0b"/>
+      <stop offset="60%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+
+    <!-- Central Railway Heritage Emerald Gradient -->
+    <linearGradient id="crGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="40%" stop-color="#059669"/>
+      <stop offset="85%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+
+    <!-- Deep Midnight Hub Core -->
+    <radialGradient id="irCoreNight" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="55%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+
+    <!-- High-Beam Headlight Beam Flare -->
+    <radialGradient id="headlightGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#fef08a" stop-opacity="0.75"/>
+      <stop offset="70%" stop-color="#f59e0b" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Authentic Ashoka Chakra Navy -->
+    <radialGradient id="chakraBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#172554"/>
+    </radialGradient>
+
+    <filter id="irEmboss" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- AMBIENT BACKING GLOW -->
+  <circle cx="250" cy="250" r="236" fill="none" stroke="url(#irGoldGrad)" stroke-width="2.5" opacity="0.4" filter="url(#goldGlow)"/>
+
+  <!-- 1. OFFICIAL OUTER SEAL - CIRCULAR COG WHEEL EMBLEM (INDIAN RAILWAYS STANDARD) -->
+  <circle cx="250" cy="250" r="230" fill="url(#crGreenGrad)" stroke="url(#irGoldGrad)" stroke-width="6" filter="url(#irEmboss)"/>
+  
+  <!-- Outer Punctuality Beaded Rim (36 Track Nodes) -->
+  <circle cx="250" cy="250" r="218" fill="none" stroke="#fef08a" stroke-width="2" stroke-dasharray="4,6" opacity="0.85"/>
+
+  <!-- Concentric Inner Gold Ring -->
+  <circle cx="250" cy="250" r="206" fill="url(#irMaroonGrad)" stroke="url(#irGoldGrad)" stroke-width="3"/>
+
+  <!-- Inner Dark Blue Core (Night Railway Hub) -->
+  <circle cx="250" cy="250" r="160" fill="url(#irCoreNight)" stroke="url(#irGoldGrad)" stroke-width="2.5"/>
+
+  <!-- 2. INDIAN RAILWAYS EMBLEMATIC ASHOKA CHAKRA / 24-SPOKE WHEEL (CENTER BACKDROP) -->
+  <g transform="translate(250, 215) scale(0.68)" opacity="0.35">
+    <circle cx="0" cy="0" r="110" fill="none" stroke="#38bdf8" stroke-width="5"/>
+    <circle cx="0" cy="0" r="18" fill="#38bdf8"/>
+    <!-- 24 Spokes of Progress -->
+    <g stroke="#38bdf8" stroke-width="2.5">
+      <line x1="0" y1="-110" x2="0" y2="110"/>
+      <line x1="-110" y1="0" x2="110" y2="0"/>
+      <line x1="-77.8" y1="-77.8" x2="77.8" y2="77.8"/>
+      <line x1="-77.8" y1="77.8" x2="77.8" y2="-77.8"/>
+      <line x1="-101.5" y1="-42" x2="101.5" y2="42"/>
+      <line x1="-101.5" y1="42" x2="101.5" y2="-42"/>
+      <line x1="-42" y1="-101.5" x2="42" y2="101.5"/>
+      <line x1="-42" y1="101.5" x2="42" y2="-101.5"/>
+      <line x1="-95.3" y1="-55" x2="95.3" y2="55"/>
+      <line x1="-95.3" y1="55" x2="95.3" y2="-55"/>
+      <line x1="-55" y1="-95.3" x2="55" y2="95.3"/>
+      <line x1="-55" y1="95.3" x2="55" y2="-95.3"/>
+    </g>
+  </g>
+
+  <!-- 3. CONVERGING DUAL BROAD-GAUGE TRACKS (1676mm Track Perspective) -->
+  <g id="broadGaugeTracks" opacity="0.95">
+    <!-- Concrete Sleepers -->
+    <path d="M 220 320 L 280 320" stroke="#64748b" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M 205 345 L 295 345" stroke="#64748b" stroke-width="5.5" stroke-linecap="round"/>
+    <path d="M 185 375 L 315 375" stroke="#475569" stroke-width="7" stroke-linecap="round"/>
+    <path d="M 160 410 L 340 410" stroke="#334155" stroke-width="8.5" stroke-linecap="round"/>
+    <path d="M 130 450 L 370 450" stroke="#1e293b" stroke-width="10" stroke-linecap="round"/>
+
+    <!-- Left & Right Heavy Steel Rails -->
+    <polygon points="234,295 238,295 142,465 133,465" fill="#94a3b8"/>
+    <polygon points="266,295 262,295 358,465 367,465" fill="#94a3b8"/>
+    <!-- Polished Rail Crown Gleam -->
+    <line x1="236" y1="295" x2="138" y2="465" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
+    <line x1="264" y1="295" x2="362" y2="465" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
+  </g>
+
+  <!-- 4. OFFICIAL INDIAN RAILWAY CENTRAL LOCAL (EMU) CAB FRONT -->
+  <g id="irCentralEmu" filter="url(#irEmboss)">
+    <!-- Aerodynamic Pantograph with Overhead Catenary Spark -->
+    <g stroke="url(#irGoldGrad)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="250" y1="165" x2="250" y2="146"/>
+      <path d="M 232 146 L 250 130 L 268 146"/>
+      <line x1="220" y1="130" x2="280" y2="130"/>
+      <!-- 25kV AC Live Spark -->
+      <circle cx="250" cy="130" r="3.5" fill="#38bdf8"/>
+    </g>
+
+    <!-- Cab Roof Curved Dome -->
+    <path d="M 194 182 Q 250 162 306 182 L 316 215 L 184 215 Z" fill="#1e293b" stroke="#0f172a" stroke-width="2"/>
+
+    <!-- Front EMU Body Shell -->
+    <path d="M 180 212 C 180 200 196 195 250 195 C 304 195 320 200 320 212 L 324 290 C 324 308 310 316 295 320 L 205 320 C 190 316 176 308 176 290 Z" 
+          fill="#334155" stroke="#0f172a" stroke-width="2.5"/>
+
+    <!-- Illuminated Indian Railway LED Route Indicator: CSMT FAST -->
+    <rect x="208" y="198" width="84" height="16" rx="3.5" fill="#020617" stroke="#fbbf24" stroke-width="1.2"/>
+    <text x="250" y="210" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="900" fill="#38bdf8" text-anchor="middle" letter-spacing="1.5">CSMT FAST</text>
+
+    <!-- Twin Panoramic Aerodynamic Windshields -->
+    <!-- Left Driver Windshield -->
+    <path d="M 190 222 L 243 222 L 243 256 L 192 254 Z" fill="#0284c7" opacity="0.9" stroke="#0f172a" stroke-width="2"/>
+    <path d="M 194 225 L 216 225 L 198 250 Z" fill="#ffffff" opacity="0.4"/>
+    <!-- Right Driver Windshield -->
+    <path d="M 257 222 L 310 222 L 308 254 L 257 256 Z" fill="#0284c7" opacity="0.9" stroke="#0f172a" stroke-width="2"/>
+    <path d="M 261 225 L 283 225 L 265 250 Z" fill="#ffffff" opacity="0.4"/>
+    <!-- Windshield Central Pillar -->
+    <rect x="245" y="221" width="10" height="36" fill="#0f172a"/>
+
+    <!-- CENTRAL RAILWAY / INDIAN RAILWAYS SIGNATURE LIVERY STRIPES -->
+    <!-- Golden Saffron Upper Ribbon -->
+    <polygon points="182,260 318,260 319,268 181,268" fill="#f59e0b"/>
+    <!-- Imperial Maroon Center Band -->
+    <polygon points="180,268 320,268 321,280 179,280" fill="#991b1b"/>
+    <!-- Golden Saffron Lower Ribbon -->
+    <polygon points="179,280 321,280 322,286 178,286" fill="#f59e0b"/>
+
+    <!-- Front Center IR Official Coat / Ashoka Lion Medallion on Rake -->
+    <circle cx="250" cy="274" r="7.5" fill="#fef08a" stroke="#b45309" stroke-width="1.5"/>
+    <circle cx="250" cy="274" r="3" fill="#1e3a8a"/>
+
+    <!-- Lower Cowcatcher / Heavy Buffer Grille -->
+    <rect x="198" y="310" width="104" height="12" rx="3" fill="#090d16" stroke="#475569" stroke-width="1"/>
+    <line x1="206" y1="316" x2="294" y2="316" stroke="#94a3b8" stroke-width="2"/>
+    <circle cx="204" cy="316" r="5" fill="#334155" stroke="#f1f5f9" stroke-width="1.5"/>
+    <circle cx="296" cy="316" r="5" fill="#334155" stroke="#f1f5f9" stroke-width="1.5"/>
+
+    <!-- HIGH-BEAM DUAL RAILWAY LED HEADLIGHTS (ILLUMINATED) -->
+    <!-- Left Flare & Lens -->
+    <circle cx="212" cy="296" r="18" fill="url(#headlightGlow)"/>
+    <circle cx="212" cy="296" r="6.5" fill="#ffffff" stroke="#f59e0b" stroke-width="2.5"/>
+    <!-- Right Flare & Lens -->
+    <circle cx="288" cy="296" r="18" fill="url(#headlightGlow)"/>
+    <circle cx="288" cy="296" r="6.5" fill="#ffffff" stroke="#f59e0b" stroke-width="2.5"/>
+  </g>
+
+  <!-- 5. INDIAN RAILWAYS & CENTRAL SAATHI OFFICIAL TEXT ARCS -->
+  <!-- Top Arch: भारतीय रेल • INDIAN RAILWAYS -->
+  <path id="topNationalArc" d="M 75 250 A 175 175 0 0 1 425 250" fill="none"/>
+  <text fill="#ffffff" font-family="'Source Sans 3', system-ui, sans-serif" font-weight="900" font-size="22" letter-spacing="3.5">
+    <textPath href="#topNationalArc" startOffset="50%" text-anchor="middle">
+      भारतीय रेल • INDIAN RAILWAYS
+    </textPath>
+  </text>
+
+  <!-- Bottom Arch: CENTRAL SAATHI • मध्य रेल साथी -->
+  <path id="bottomNationalArc" d="M 430 250 A 180 180 0 0 1 70 250" fill="none"/>
+  <text fill="#fde047" font-family="'Source Sans 3', system-ui, sans-serif" font-weight="900" font-size="18.5" letter-spacing="2.8">
+    <textPath href="#bottomNationalArc" startOffset="50%" text-anchor="middle">
+      ★ CENTRAL SAATHI • मध्य रेल ★
+    </textPath>
+  </text>
+
+  <!-- SIDE STARS OF NATIONAL MERIT -->
+  <g fill="url(#irGoldGrad)">
+    <polygon points="56,250 61,240 71,240 63,247 66,257 56,250"/>
+    <polygon points="444,250 439,240 429,240 437,247 434,257 444,250"/>
+  </g>
+
+  <!-- 6. BOTTOM OFFICIAL CREST SEAL -->
+  <rect x="165" y="452" width="170" height="24" rx="12" fill="#064e3b" stroke="url(#irGoldGrad)" stroke-width="2" filter="url(#irEmboss)"/>
+  <text x="250" y="468" font-family="'IBM Plex Mono', monospace" font-size="11" font-weight="900" fill="#fef08a" text-anchor="middle" letter-spacing="1.4">
+    GOVT OF INDIA • CR 2026
+  </text>
+</svg>
